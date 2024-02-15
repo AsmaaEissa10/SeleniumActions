@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <test name="Regression Test in Chrome">
+        <classes>
+            <class name="tests.login.LoginTests">
+                <methods>
+                    <include name = "testSuccessfulLogin"/>
+                </methods>
+            </class>
+            <class name="tests.dropDown.DropdownTests">
+                <methods>
+                    <include name = "testSelectOption"/>
+                </methods>
+            </class>
+            <class name="tests.alerts.AlertTests">
+                <methods>
+                    <include name = "testAcceptAlert"/>
+                    <include name = "testGetTextFromAlert"/>
+                    <include name = "testSetInputInAlert"/>
+                </methods>
+            </class>
+            <class name="tests.fileUpload.FileUploadTests">
+                <methods>
+                    <include name = "testFileUpload"/>
+                </methods>
+            </class>
+            <class name="tests.frame.FrameTest">
+                <methods>
+                    <include name = "testWysiwyg"/>
+                </methods>
+            </class>
+            <class name="tests.hover.HoverTests">
+                <methods>
+                    <include name = "testHoverUser1"/>
+                </methods>
+            </class>
+            <class name="tests.keys.KeysTests">
+                <methods>
+                    <include name = "testPi"/>
+                </methods>
+            </class>
+            <class name="tests.navigation.NavigationTests">
+                <methods>
+                    <include name = "testNavigator"/>
+                </methods>
+            </class>
+            <class name="tests.scroll.scrollToParagraphTest">
+                <methods>
+                    <include name = "testScrollToFifthParagraph"/>
+                </methods>
+            </class>
+            <class name="tests.waits.WaitTest">
+                <methods>
+                    <include name = "testWaitUntilHidden"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
