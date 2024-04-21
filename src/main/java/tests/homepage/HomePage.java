@@ -3,7 +3,6 @@ package tests.homepage;
 import tests.alerts.AlertsPage;
 import tests.dropDown.DropdownPage;
 import tests.fileUpload.FileUploadPage;
-import tests.frame.WysiwygEditorPage;
 import tests.hover.HoversPage;
 import tests.keys.KeyPressesPage;
 import tests.login.LoginPage;
@@ -54,11 +53,6 @@ public class HomePage {
     public FileUploadPage clickFileUpload(){
         clickLink("File Upload");
         return new FileUploadPage(driver);
-    }
-    // frame
-    public WysiwygEditorPage clickWysiwygEditor(){
-        clickLink("WYSIWYG Editor");
-        return new WysiwygEditorPage(driver);
     }
     // waits
     public DynamicLoadingPage clickDynamicLoading(){
